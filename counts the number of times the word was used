@@ -1,0 +1,25 @@
+##zlicza wystepowanie elementow listy
+print('***zlicz***')
+def zlicz(string):
+    lista=list(string.split(" "))
+    print(lista, '\n')
+    zbior=set(lista)
+    for element in zbior:
+        print(element, lista.count(element))
+
+string='kot pies pies pies kot szczur mysz kot mysz mysz'        
+
+zlicz(string)
+
+
+print('\n***zlicz1***')
+
+def zlicz1(lista):
+    print(lista, '\n')
+    zbior=set(lista)
+    for element in zbior:
+        print(element, lista.count(element))
+
+lista=['kot', 'pies', 'pies', 'pies', 'kot', 'szczur', 'mysz', 'kot', 'mysz', 'mysz']        
+
+zlicz1(lista)
