@@ -1,0 +1,14 @@
+##sprawdza czy slowa są anagramami
+def anagram(org, kop):
+    
+    str1=''.join(sorted(org))
+    str2=''.join(sorted(kop))
+    if(str1==str2):   
+        print(org,'i',kop,'to anagramy')
+    else:
+        print(org,'i',kop,'to nie anagramy')
+        
+     
+org="ranty"
+kop="tyran"
+anagram(org,kop)
