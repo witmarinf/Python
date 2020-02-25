@@ -1,0 +1,19 @@
+##sprawdza czy suma trzech liczb w tablicy rowna sie 0
+
+def zero(a):
+    print('tablica',a)
+    ile=0
+    for i in range(len(a)):
+        for j in range(1,len(a)) :
+            for k in range(2,len(a)):
+                if(a[i]+a[j]+a[k]==0 and i!=k and j!=k and i!=j and i!=j!=k and i<j<k):
+                    print('a[',i,']=',a[i],'a[',j,']=',a[j],'a[',k,']=',a[k])
+                    ile=ile+1
+                
+    if (ile==0):
+        print('w tablicy brak trzech elementow, ktorych suma=0')
+
+a=[1,5,0,-1,-2,-4]
+zero(a)
+
+
