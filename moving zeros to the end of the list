@@ -1,0 +1,16 @@
+##przenosi zera na koniec listy
+def koniec(list):
+    print('przed:',list)
+    list1=[]
+    ilezer=0
+    for i in range(0,len(list)):
+        if(list[i]!=0):
+            list1.append(list[i])
+        else:
+            ilezer=ilezer+1
+    for i in range(ilezer):
+        list1.append(0)
+    print('po:   ',list1)
+
+list=[7,10,0,0,9,0,13,0,17,0,0,11,17]
+koniec(list)
